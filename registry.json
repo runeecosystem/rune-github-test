@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "rune-github-test",
+  "homepage": "https://github.com/runeecosystem/rune-github-test",
+  "items": [
+    {
+      "name": "toggle-switch",
+      "type": "registry:ui",
+      "title": "Toggle Switch",
+      "description": "A switch with a thumb that slides across and a track that fills when it turns on.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/rune/toggle-switch.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "toggle-switch-demo",
+      "type": "registry:example",
+      "title": "Toggle Switch Demo",
+      "registryDependencies": ["toggle-switch"],
+      "files": [
+        {
+          "path": "registry/rune/examples/toggle-switch-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    }
+  ]
+}
